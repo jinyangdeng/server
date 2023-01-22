@@ -16,3 +16,10 @@ echo \
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 sudo docker run hello-world
+
+systemctl start docker  
+systemctl enable docker 
+
+# pulling gitlab-ce
+
+docker pull gitlab/gitlab-ce:latest
